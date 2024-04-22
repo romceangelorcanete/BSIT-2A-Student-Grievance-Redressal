@@ -1,0 +1,577 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+img{
+  width: 50%;
+}
+div{
+  justify-content: center;
+}
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+.wrapper complain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+.modify-complain {
+
+    width: 650px;
+}
+.modify-complain-h {
+
+    width: 800px;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+.nav-logo p{
+    color: white;
+    font-size: 0px;
+    font-weight: 0;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    align-content: center;
+}
+
+.nav-button-back {
+    width: 50%;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.btn-back{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn-back:hover{
+    background: rgba(255, 255, 255, 0.5);
+
+}
+.nav-menu-btn{
+    display: none;
+}
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 550px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.form-box-complain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 550px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.form-box-trackcomplain{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.form-box-modifycomplain{
+    position: relative;
+    justify-content: center;
+    height: 700px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.trackcomplain {
+    width: 800px;
+
+}
+
+.complain-container{
+    position: absolute;
+    left: 4px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+
+.modify-container{
+    left: 4px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    opacity: 1;
+}
+
+.register-container{
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.top span{
+    /* color: #fff; */
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+.two-forms-modify{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+
+}
+.input-field-dropdown {
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 25px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+    margin-bottom: 20px;
+}
+.input-field-dropdown:hover, .input-field-dropdown:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.input-field-dropdown i{
+    position: relative;
+    top: 2px;
+    left: -120px;
+    color: #fff;
+}
+
+select option {
+    color: #212529;
+
+}
+
+/* .input-box-drop {
+    position: relative;
+    display: inline-block;
+} */
+
+
+#trackID {
+    text-align: center;
+}
+
+.input-box-drop button {
+    text-align: left;
+
+}
+
+.input-box-drop:hover .input-field-dropdown-content{
+    display: block;
+
+}
+
+.input-field-dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field-dropdown-content:hover, .input-field-dropdown-content:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.input-field-dropdown-content a{
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.input-field-dropdown-content i{
+    position: relative;
+    top: 2px;
+    left: -120px;
+    color: #fff;
+}
+
+
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #212529;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.input-field-complain{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #212529;
+    width: 100%;
+    padding: 15px 10px 15px 25px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+    margin-bottom: 20px;
+    resize: none;
+
+}
+.input-field-complain:hover, .input-field-complain:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.input-field-complain-h{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #212529;
+    width: 100%;
+    padding: 15px 10px 15px 25px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+    margin-bottom: 20px;
+    resize: none;
+
+}
+.input-field-complain-h:hover, .input-field-complain-h:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+
+.input-box-label {
+    margin-top: 13px;
+    width: 20%;
+    font-weight: bold;
+}
+
+.input-box-label-h {
+    margin-top: 13px;
+    width: 40%;
+    font-weight: bold;
+}
+
+.input-box-modify {
+    width: 80%;
+}
+.input-box-btn {
+    width: 50%;
+}
+
+#myTable {
+    border-collapse: collapse;
+    width: 100%;
+    height: 50%;
+    border: 1px solid #65c6ec;
+    font-size: 12px;
+    position: sticky;
+    table-layout: fixed;
+    white-space: nowrap;
+    
+  }
+  
+  #myTable th, #myTable td {
+    text-align: left;
+    padding: 12px;
+    overflow: hidden;
+  }
+  
+  #myTable tr {
+    border-bottom: 1px solid #ddd;
+    background-color: #f1f1f1;
+  }
+  
+  #myTable tr.header{
+    background-color: #a6e6f7;
+  }
+
+  #myTable tr:hover {
+background-color: aliceblue;
+
+  }
+
+
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flow-root;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: none;
+    color: #fff;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+@media only screen and (max-width: 540px) {
+    .wrapper{
+        min-height: 100vh;
+    }
+    .form-box{
+        width: 100%;
+        height: 500px;
+    }
+    .register-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container .two-forms{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+/* Style for the container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set the container height to viewport height */
+    padding: 20px;
+    text-align: center; /* Center the text inside */
+}
+p {
+    color: #ffffff; /* Set text color to a dark white color */
+    
+}
+
+.center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.open-popup{
+    visibility: hidden;
+    top: 50%;
+    transform: translate(-50%, -50%)scale(1);
+
+
+}
+.pop h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+} */
